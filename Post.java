@@ -56,7 +56,10 @@ public class Post
     public long getTimeStamp(){
         return timestamp;
     }
+    public String getUser(){
     
+        return username;
+    }
     /**
      * Metodo que muestra toda la info del post
      */

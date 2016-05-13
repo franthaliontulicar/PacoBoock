@@ -7,21 +7,19 @@ import java.util.ArrayList;
  */
 public class MessagePost extends Post
 {
-   
+
     private String message;
- 
-    
+
     /**
      * Constructor for objects of class MessagePost
      */
     public MessagePost(String text)
     {
         super("xxx");
-       this.message = text;
-       
+        this.message = text;
+
     }
 
-    
    
     /**
      * Metodo que devuelve el mensaje del post
@@ -29,10 +27,11 @@ public class MessagePost extends Post
     public String getText(){
         return message;
     }
-    
-    
-    
-    
-    
+
+    public void printShortSummary(){
+        System.out.println("Esto es un post de texto creado por "+getUser());
+
+    }
+
     
 }
