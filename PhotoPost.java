@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class PhotoPost extends Post
+public class PhotoPost extends CommentPost
 {
    
     private String filename;
@@ -18,7 +18,7 @@ public class PhotoPost extends Post
      */
     public PhotoPost(String filename, String caption)
     {
-       super("xxx");
+       super();
        this.filename = filename;
       
        this.caption = caption;

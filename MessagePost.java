@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class MessagePost extends Post
+public class MessagePost extends CommentPost
 {
 
     private String message;
@@ -15,7 +15,7 @@ public class MessagePost extends Post
      */
     public MessagePost(String text)
     {
-        super("xxx");
+        super();
         this.message = text;
 
     }
