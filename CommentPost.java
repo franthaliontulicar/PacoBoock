@@ -27,13 +27,8 @@ public class CommentPost extends Post
      * @param  y   a sample parameter for a method
      * @return     the sum of x and y 
      */
-    public void addComents()
+    public void addComents(String comment)
     {
-        String info = "";
-        if(comments.size() != 0)
-            for(int i=0; i<comments.size(); i++)
-                info += comments.get(i) + "\n_____________________\n";
-        else
-            info += "Sin comentarios";
+        comments.add(comment);
     }
 }
