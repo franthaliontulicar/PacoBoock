@@ -9,58 +9,42 @@ import java.util.ArrayList;
  */
 public class NewsFeed
 {
-    private ArrayList<MessagePost> messages;
-    private ArrayList<PhotoPost> photos;
-   private ArrayList<JoinGroupPost> grupos;
-
+    // private ArrayList<MessagePost> messages;
+    //private ArrayList<PhotoPost> photos;
+    //private ArrayList<JoinGroupPost> grupos;
+    private ArrayList<Post> post;
     /**
      * Constructor for objects of class NewsFeed
      */
     public NewsFeed()
     {
-        messages = new ArrayList<>();
-        photos = new ArrayList<>();
-        grupos = new ArrayList<>();
+        //messages = new ArrayList<>();
+        //photos = new ArrayList<>();
+        //grupos = new ArrayList<>();
+        post = new ArrayList<>();
     }
 
-    /**
-     * Add a post with a message
-     * 
-     * @message the message to introduce
-     */
-    public void addMessagePost(MessagePost message)
-    {
-        messages.add(message);
+    public void addPost(Post postIt){
+        post.add(postIt);
+
     }
 
-    /**
-     * Add a post with a image
-     * 
-     * @message the image to introduce
-     */
-    public void addPhotoPost(PhotoPost photo)
-    {
-        photos.add(photo);
-    }
-    
-    public void addGrupoPost(JoinGroupPost grupo)
-    {
-        grupos.add(grupo);
-    }
-    
     /**
      * Show the post
      */
     public void show(){
-        for(MessagePost message : messages){
+       /** for(MessagePost message : messages){
             message.display();
         }
         for(PhotoPost photo : photos){
             photo.display();
         }
-         for(JoinGroupPost group : grupos){
-      			group.display();
-      }
+        for(JoinGroupPost group : grupos){
+            group.display();
+        }*/
+        for(Post post: post){
+            post.display();
+        }
     }
 }
 
