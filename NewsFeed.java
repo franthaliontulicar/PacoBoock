@@ -11,6 +11,7 @@ public class NewsFeed
 {
     private ArrayList<MessagePost> messages;
     private ArrayList<PhotoPost> photos;
+   private ArrayList<JoinGroupPost> grupos;
 
     /**
      * Constructor for objects of class NewsFeed
@@ -19,6 +20,7 @@ public class NewsFeed
     {
         messages = new ArrayList<>();
         photos = new ArrayList<>();
+        grupos = new ArrayList<>();
     }
 
     /**
@@ -39,6 +41,11 @@ public class NewsFeed
     public void addPhotoPost(PhotoPost photo)
     {
         photos.add(photo);
+    }
+    
+    public void addGrupoPost(JoinGroupPost grupo)
+    {
+        grupos.add(grupo);
     }
     
     /**
